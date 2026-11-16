@@ -15,22 +15,27 @@ This repository tracks notable **SaaS platforms** and **open-source projects** f
 Contributions welcome! Open an PR to add/update entries. Keep descriptions factual and link to official sites.
 
 ## Table of Contents
-- [SaaS/Hosted Platforms](#saas-products)
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
+- [SaaS/Hosted Platforms](#saashosted-platforms)
 - [Open-Source GitHub Projects](#open-source-github-projects)
 - [How to Contribute](#how-to-contribute)
 - [Disclaimer](#disclaimer)
 
+## Sector Overview & Market Dynamics
+
+The cloud-based testing and test automation market is valued between **$13 billion and $15 billion** (projected to reach over $35 billion by 2034 at an estimated 12–14% CAGR), accelerated by continuous delivery demands and AI-driven test orchestration. The sector remains **moderately to highly fragmented** rather than winner-take-all; it is divided among enterprise hyperscalers, specialized browser/device grid providers, dedicated CI/CD platforms, and an active open-source ecosystem, with vendors competing across managed cloud grids, cost-per-parallel pricing, and self-hosted orchestration.
+
 ## SaaS/Hosted Platforms
 
-| Product | Description | Pricing (Starting) | Free Tier / Trial Limits |
-|---------|-------------|-------------------|--------------------------|
-| **[BrowserStack Parallel Testing](https://www.browserstack.com/)** | Cloud grid with 3,000+ browsers and 30,000+ real mobile devices. Automate plans priced per parallel session with unlimited test minutes. | Quote-only for Automate; Live from ~$12.50/user/month (annual) | No free automation tier; free trial on signup; free for qualifying open-source projects |
-| **[Sauce Labs Concurrent Testing](https://saucelabs.com/)** | Enterprise cloud with Virtual Device Cloud (emulators) and Real Device Cloud (physical devices). Unlimited automated testing minutes on paid plans. | Virtual Device Cloud: **$149/month** (annual, 1 parallel); Real Device Cloud: **$199/month** | No permanent free tier; free trial via sales |
-| **[LambdaTest Parallel Testing](https://www.lambdatest.com/)** | Cloud grid with 10,000+ browser/OS combinations. Rebranded to TestMu AI in January 2026. HyperExecute provides test orchestration with unlimited parallel nodes. | Live from ~$15/month; Automation from ~$79–99/month per parallel | **Free**: 100 lifetime automation minutes, 2 parallel sessions |
-| **[HyperExecute (TestMu AI)](https://www.lambdatest.com/hyperexecute)** | Test orchestration engine with **virtually unlimited parallel nodes across multiple clouds**. Each parallel test execution consumes a single HyperExecute license. | $103/month per parallel session (Linux, annual); $159/month (Windows/macOS) | Free plan: 300 HyperExecute minutes + 2 concurrent sessions |
-| **[CircleCI Test Splitting](https://circleci.com/)** | Cloud CI/CD with **timing-based test splitting** across parallel containers. Uses historical timing data to balance partitions. | Performance: **$15/month** base + credits | Free plan: 30,000 credits/month, 5 active users |
-| **[GitHub Actions Matrix](https://github.com/features/actions)** | Native CI/CD with **matrix builds** for parallel job execution. Public repos get unlimited free minutes. | Linux 2-core: ~$0.006/minute (reduced) | Free plan: 2,000 minutes/month for private repos; public repos unlimited |
-| **[Aerokube Moon](https://aerokube.com/moon/)** | Kubernetes-native browser automation cloud supporting Selenium, Playwright, Puppeteer, and Cypress in a single cluster. | $5 per parallel session per month | Free evaluation license keys of any size until production |
+| Product | Company Size (Valuation / Revenue) | Description | Starting Pricing | Free Tier / Free Trial Limits |
+|---------|-----------------------------------|-------------|------------------|-------------------------------|
+| **[GitHub Actions Matrix](https://github.com/features/actions)** | **$7.5B+ acquisition valuation** (~$2B+ ARR run-rate via Microsoft) | Native CI/CD with **matrix builds** for parallel job execution. Public repos get unlimited free minutes. | Paid Linux runners start at **$0.008/minute** (2-core) | **Permanent Free Tier**: 2,000 minutes/month for private repos; unlimited minutes for public repos |
+| **[BrowserStack Parallel Testing](https://www.browserstack.com/)** | **$4.0B valuation** (~$230M ARR) | Cloud grid with 3,000+ browsers and 30,000+ real mobile devices. Automate plans priced per parallel session with unlimited test minutes. | Automate Desktop starts at **$59/month** (annual, 1 parallel session) or $29/month for manual Live | **Free Trial Only**: 100 minutes of automated cross-browser testing; 30 minutes of manual Live testing (capped at 1 min/session); unlimited free for qualifying open-source |
+| **[CircleCI Test Splitting](https://circleci.com/)** | **$1.7B valuation** (~$55M+ ARR) | Cloud CI/CD with **timing-based test splitting** across parallel containers. Uses historical timing data to balance partitions. | Scale/Performance plans start at **$15/month** base + $0.0006/credit | **Permanent Free Tier**: 30,000 free credits/month (up to ~6,000 build minutes) for up to 5 active users |
+| **[Sauce Labs Concurrent Testing](https://saucelabs.com/)** | **~$613M valuation** (~$65M–$95M ARR) | Enterprise cloud with Virtual Device Cloud (emulators) and Real Device Cloud (physical devices). Unlimited automated testing minutes on paid plans. | Virtual Device Cloud starts at **$149/month** (annual, 1 parallel session); Live testing starts at $39/month | **Free Trial Only**: 28-day free trial including 60 automated/live testing minutes and up to 3 parallel virtual machines |
+| **[HyperExecute (TestMu AI)](https://www.lambdatest.com/hyperexecute)** | **~$400M valuation** (~$120M–$150M ARR parent company LambdaTest) | Test orchestration engine with **virtually unlimited parallel nodes across multiple clouds**. Each parallel test execution consumes a single HyperExecute license. | HyperExecute starts at **$103/month** per parallel session (annual, Linux) or $159/month (Windows/macOS) | **Permanent Free Tier**: 300 HyperExecute minutes/month + 2 concurrent sessions |
+| **[LambdaTest Parallel Testing](https://www.lambdatest.com/)** | **~$400M valuation** (~$120M–$150M ARR) | Cloud grid with 10,000+ browser/OS combinations. Rebranded to TestMu AI in January 2026. HyperExecute provides test orchestration with unlimited parallel nodes. | Automation starts at **$79/month** (annual, 1 parallel desktop browser) or $15/month for manual Live | **Permanent Free Tier**: 100 lifetime automation minutes + 2 parallel sessions; 60 minutes/month manual Live testing (10 min/session) |
+| **[Aerokube Moon](https://aerokube.com/moon/)** | **Bootstrapped / Boutique** (~$1M–$5M estimated revenue) | Kubernetes-native browser automation cloud supporting Selenium, Playwright, Puppeteer, and Cypress in a single cluster. | Paid licenses start at **$5/month per parallel session** | **Permanent Free Tier**: Free forever for up to 4 parallel browser sessions; unlimited-session evaluation license keys available for pre-production testing |
 
 ## Open-Source GitHub Projects
 
