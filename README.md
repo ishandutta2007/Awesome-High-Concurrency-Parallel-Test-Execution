@@ -5,7 +5,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-High-Concurrency-Parallel-Test-Execution/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-High-Concurrency-Parallel-Test-Execution?style=social" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-High-Concurrency-Parallel-Test-Execution/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-High-Concurrency-Parallel-Test-Execution?style=social" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-High-Concurrency-Parallel-Test-Execution/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-High-Concurrency-Parallel-Test-Execution?style=social" alt="GitHub Forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-High-Concurrency-Parallel-Test-Execution/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-High-Concurrency-Parallel-Test-Execution?color=brightgreen" alt="Issues" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-High-Concurrency-Parallel-Test-Execution/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License" /></a>
@@ -62,7 +62,7 @@ The cloud-based testing and test automation market is valued between **$13 billi
 
 *Ranked in descending order of GitHub community stars. Each badge links directly to the project's stargazers.*
 
-| Project | Star Badge | Description |
+| Project | Stars_Badge | Description |
 |:---|:---:|:---|
 | **[Playwright](https://github.com/microsoft/playwright)** | [![Stars](https://img.shields.io/github/stars/microsoft/playwright?style=social&color=white)](https://github.com/microsoft/playwright/stargazers) | **The gold standard for high-concurrency cross-browser automation with zero additional license cost.** **Apache-2.0**, Microsoft-maintained. Provides native worker-level multithreading on a single runner (`workers`) alongside suite-level `--shard` flags for distributing across CI machines. Supports `fullyParallel: true`, automated blob report merging, and test locks (`lock: 'resource-name'`) for shared environments. |
 | **[Selenium](https://github.com/SeleniumHQ/selenium)** | [![Stars](https://img.shields.io/github/stars/SeleniumHQ/selenium?style=social&color=white)](https://github.com/SeleniumHQ/selenium/stargazers) | **The reference hub-and-node architecture for distributed WebDriver execution.** **Apache-2.0**. Selenium Grid 4 distributes test commands across independent physical or containerized nodes, featuring dynamic driver management, distributed OpenTelemetry tracing, and GraphQL status inspection. |
@@ -120,3 +120,12 @@ If this curated guide helps you architect faster CI/CD pipelines, optimize test 
   <b>Built with ❤️ for QA Engineers, DevOps Practitioners, and CI/CD Architects worldwide.</b><br/>
   Let's make high-concurrency parallel test execution open, blazing-fast, and cost-predictable.
 </p>
+
+## ⭐ Star History
+
+<a href="https://star-history.com/#ishandutta2007/Awesome-High-Concurrency-Parallel-Test-Execution&Timeline" align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/ishandutta2007_Awesome-High-Concurrency-Parallel-Test-Execution_growth.svg">
+    <img alt="Star History Chart" src="assets/ishandutta2007_Awesome-High-Concurrency-Parallel-Test-Execution_growth.svg">
+  </picture>
+</a>
