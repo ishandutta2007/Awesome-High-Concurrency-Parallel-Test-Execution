@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#0a0f1d" />
+    </linearGradient>
+
+    <!-- Accent Gradients -->
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="glowGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="glowGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#c084fc" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="beamGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0" />
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="gridPattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="0.75" stroke-opacity="0.25" />
+    </pattern>
+
+    <style>
+      .glow-orb-1 {
+        animation: floatOrb 8s ease-in-out infinite alternate;
+      }
+      .glow-orb-2 {
+        animation: floatOrb 10s ease-in-out infinite alternate-reverse;
+      }
+      @keyframes floatOrb {
+        0% { transform: translate(0, 0) scale(1); }
+        100% { transform: translate(40px, -25px) scale(1.15); }
+      }
+      .pulse-beam {
+        animation: beamPulse 4s ease-in-out infinite;
+      }
+      @keyframes beamPulse {
+        0%, 100% { opacity: 0.3; stroke-dashoffset: 0; }
+        50% { opacity: 0.9; stroke-dashoffset: -80; }
+      }
+      .signal-dot {
+        animation: travelSignal 3s linear infinite;
+      }
+      @keyframes travelSignal {
+        0% { cx: 200; opacity: 0; }
+        20% { opacity: 1; }
+        80% { opacity: 1; }
+        100% { cx: 1000; opacity: 0; }
+      }
+      .signal-dot-rev {
+        animation: travelSignalRev 3.5s linear infinite;
+      }
+      @keyframes travelSignalRev {
+        0% { cx: 1000; opacity: 0; }
+        20% { opacity: 1; }
+        80% { opacity: 1; }
+        100% { cx: 200; opacity: 0; }
+      }
+      .chip-glow {
+        animation: borderFlicker 3s infinite ease-in-out;
+      }
+      @keyframes borderFlicker {
+        0%, 100% { stroke: #38bdf8; stroke-opacity: 0.4; }
+        50% { stroke: #c084fc; stroke-opacity: 0.9; }
+      }
+    </style>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1200" height="420" fill="url(#bgGrad)" />
+
+  <!-- Animated Ambient Glowing Orbs in Background -->
+  <circle class="glow-orb-1" cx="250" cy="140" r="180" fill="url(#glowGrad1)" filter="blur(40px)" />
+  <circle class="glow-orb-2" cx="950" cy="260" r="220" fill="url(#glowGrad2)" filter="blur(50px)" />
+
+  <!-- Background Grid Matrix -->
+  <rect width="1200" height="420" fill="url(#gridPattern)" />
+
+  <!-- Animated Parallel Data Streams (Behind text) -->
+  <g opacity="0.6">
+    <!-- Stream Line 1 -->
+    <path class="pulse-beam" d="M 100 80 L 1100 80" stroke="url(#accentGrad)" stroke-width="1.5" stroke-dasharray="8 12" />
+    <!-- Stream Line 2 -->
+    <path class="pulse-beam" d="M 50 340 L 1150 340" stroke="url(#accentGrad)" stroke-width="1.5" stroke-dasharray="12 16" />
+    
+    <!-- Moving Packets / Concurrency Signals -->
+    <circle class="signal-dot" cy="80" r="3.5" fill="#38bdf8" />
+    <circle class="signal-dot-rev" cy="340" r="3.5" fill="#c084fc" />
+  </g>
+
+  <!-- Concurrency Matrix Visualization Graphic (Background Accents) -->
+  <g opacity="0.35" transform="translate(920, 70)">
+    <rect x="0" y="0" width="220" height="110" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1" />
+    <text x="15" y="24" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">PARALLEL NODES [64x]</text>
+    <rect class="chip-glow" x="15" y="36" width="38" height="24" rx="4" fill="#0f172a" stroke="#38bdf8" />
+    <rect class="chip-glow" x="65" y="36" width="38" height="24" rx="4" fill="#0f172a" stroke="#818cf8" />
+    <rect class="chip-glow" x="115" y="36" width="38" height="24" rx="4" fill="#0f172a" stroke="#38bdf8" />
+    <rect class="chip-glow" x="165" y="36" width="38" height="24" rx="4" fill="#0f172a" stroke="#c084fc" />
+    <rect class="chip-glow" x="15" y="68" width="38" height="24" rx="4" fill="#0f172a" stroke="#c084fc" />
+    <rect class="chip-glow" x="65" y="68" width="38" height="24" rx="4" fill="#0f172a" stroke="#38bdf8" />
+    <rect class="chip-glow" x="115" y="68" width="38" height="24" rx="4" fill="#0f172a" stroke="#818cf8" />
+    <rect class="chip-glow" x="165" y="68" width="38" height="24" rx="4" fill="#0f172a" stroke="#38bdf8" />
+  </g>
+
+  <!-- FOREGROUND: Content Card & Title/Subtitle -->
+  <!-- Top Badge / Pill -->
+  <g transform="translate(100, 75)">
+    <rect x="0" y="0" width="230" height="28" rx="14" fill="#1e293b" fill-opacity="0.8" stroke="#38bdf8" stroke-width="1" />
+    <circle cx="16" cy="14" r="5" fill="#10b981">
+      <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <text x="32" y="18" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" letter-spacing="0.5">HIGH-CONCURRENCY QA</text>
+  </g>
+
+  <!-- Main Repository Title -->
+  <text x="100" y="155" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="44" font-weight="900" letter-spacing="-1">Awesome Parallel Test Execution</text>
+
+  <!-- Gradient Subtitle / Tagline -->
+  <text x="100" y="200" fill="url(#accentGrad)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="0.2">High-Concurrency Test Orchestration, CI Sharding &amp; Distributed Grids</text>
+
+  <!-- Descriptive Summary Line -->
+  <text x="100" y="240" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400">
+    Curated SaaS platforms, distributed browser clusters, timing-based test splitters, and open-source frameworks.
+  </text>
+
+  <!-- Key Architecture Feature Pills -->
+  <g transform="translate(100, 275)">
+    <!-- Pill 1 -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="165" height="34" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="15" y="21" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">⚡ Distributed Sharding</text>
+    </g>
+    <!-- Pill 2 -->
+    <g transform="translate(180, 0)">
+      <rect x="0" y="0" width="150" height="34" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="15" y="21" fill="#818cf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">☸️ Kubernetes Grids</text>
+    </g>
+    <!-- Pill 3 -->
+    <g transform="translate(345, 0)">
+      <rect x="0" y="0" width="160" height="34" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="15" y="21" fill="#c084fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">⏱️ Timing Bin-Packing</text>
+    </g>
+    <!-- Pill 4 -->
+    <g transform="translate(520, 0)">
+      <rect x="0" y="0" width="145" height="34" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="15" y="21" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">🌐 Cloud Scale</text>
+    </g>
+  </g>
+</svg>
